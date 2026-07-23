@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Notes | AbdUL REHMAN</title>
+    <link rel="shortcut icon" href="css-3.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="Css Tutorial.css" />
+  </head>
+  <body>
+    <section id="title-section">
+      <header>
+        <h1 class="main-title">CSS Notes</h1>
+      </header>
+    </section>
+
+    <section>
+      <h1>1. CSS HOME</h1>
+      <p>
+        <strong>Definition:</strong> CSS (Cascading Style Sheets) web pages ko
+        style aur layout provide karne ke liye use hota hai. Yeh HTML ke sath
+        mil kar front-end development ka essential part hai.
+      </p>
+    </section>
+
+    <section>
+      <h1>2. CSS Introduction</h1>
+      <p>
+        <strong>Definition:</strong> CSS ka use HTML elements ko visually style
+        karne aur layout dene ke liye hota hai. Yeh presentation aur HTML ke
+        structure ko separate karta hai.
+      </p>
+      <p>
+        <strong>Syntax:</strong> CSS ko HTML mein link karne ke liye
+        <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> tag use hota
+        hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        h1 {<br />
+        &nbsp;&nbsp;color: blue;<br />
+        &nbsp;&nbsp;font-size: 24px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Applies blue color and font size to &lt;h1&gt; elements.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank"
+          >CSS Introduction</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>3. CSS Syntax</h1>
+      <p>
+        <strong>Definition:</strong> CSS mein syntax ek selector aur declaration
+        block ka combination hota hai jo style define karta hai.
+      </p>
+      <p><strong>Syntax:</strong> <code>selector { property: value; }</code></p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;color: red;<br />
+        &nbsp;&nbsp;font-size: 16px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Applies red color and font size to all &lt;p&gt; tags.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank"
+          >CSS Syntax</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>4. CSS Selectors</h1>
+      <p>
+        <strong>Definition:</strong> Selectors specify karte hain ke kin HTML
+        elements ko style apply karna hai.
+      </p>
+      <p><strong>Types of Selectors:</strong></p>
+      <ul>
+        <li>
+          <strong>Element Selector:</strong> Selects by element name (e.g.,
+          <code>p</code>, <code>h1</code>).
+        </li>
+        <li>
+          <strong>ID Selector:</strong> Selects by unique ID
+          (<code>#myId</code>).
+        </li>
+        <li>
+          <strong>Class Selector:</strong> Selects by class name
+          (<code>.myClass</code>).
+        </li>
+      </ul>
+      <p><strong>Example:</strong></p>
+      <code>
+        .class-name { color: green; }<br />
+        #unique-id { font-weight: bold; }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Applies specific styles to elements with matching classes and IDs.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_selectors.asp"
+          target="_blank"
+          >CSS Selectors</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>5. CSS Colors</h1>
+      <p>
+        <strong>Definition:</strong> Colors elements ko visually style karne
+        mein madad karte hain aur alag-alag methods ke through define kiye ja
+        sakte hain: names, hex codes, RGB, HSL.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code> h1 { color: #ff6347; } /* Tomato color in hex */ </code> <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Applies tomato color to &lt;h1&gt; elements.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_colors.asp" target="_blank"
+          >CSS Colors</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>6. CSS Backgrounds</h1>
+      <p>
+        <strong>Definition:</strong> CSS backgrounds se element ke background
+        color, image, position aur repeat control karne mein madad milti hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        body {<br />
+        &nbsp;&nbsp;background-color: #f3f3f3;<br />
+        &nbsp;&nbsp;background-image: url('background.jpg');<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Sets a background color and image to the body.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_background.asp"
+          target="_blank"
+          >CSS Backgrounds</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>7. CSS Borders</h1>
+      <p>
+        <strong>Definition:</strong> Borders elements ko alag dikhane aur
+        visually divide karne ke liye style kiya jata hai. CSS mein border
+        color, style aur width define hoti hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;border: 2px solid black;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Adds a black border to the div.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_border.asp" target="_blank"
+          >CSS Borders</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>8. CSS Margins</h1>
+      <p>
+        <strong>Definition:</strong> Margins kisi element aur uske surrounding
+        content ke darmiyan space define karte hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;margin: 10px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Adds space around all &lt;p&gt; elements.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_margin.asp" target="_blank"
+          >CSS Margins</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>9. CSS Padding</h1>
+      <p>
+        <strong>Definition:</strong> Padding kisi element ke content aur border
+        ke beech ka space hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;padding: 15px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Adds space within the border of the div.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_padding.asp" target="_blank"
+          >CSS Padding</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Height/Width</h1>
+      <p>
+        <strong>Definition:</strong> CSS mein height aur width properties kisi
+        element ke dimensions ko control karti hain. Yeh fixed (pixels),
+        relative (percentages), ya auto values ho sakti hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;width: 300px;<br />
+        &nbsp;&nbsp;height: 150px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Sets the div to 300px wide and 150px high.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_dimension.asp"
+          target="_blank"
+          >CSS Height/Width</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Box Model</h1>
+      <p>
+        <strong>Definition:</strong> CSS box model mein padding, borders,
+        margins aur content included hotay hain jo ek element ka total size
+        define karte hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;width: 200px;<br />
+        &nbsp;&nbsp;padding: 20px;<br />
+        &nbsp;&nbsp;border: 5px solid black;<br />
+        &nbsp;&nbsp;margin: 10px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Adds padding, border, and margin around the div, adjusting its overall
+        size.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank"
+          >CSS Box Model</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Outline</h1>
+      <p>
+        <strong>Definition:</strong> Outline kisi element ke bahar additional
+        line hai jo border ke bahar lagti hai aur layout ko effect nahi karti.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;outline: 2px solid red;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Adds a red outline around &lt;p&gt; elements.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_outline.asp" target="_blank"
+          >CSS Outline</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Text</h1>
+      <p>
+        <strong>Definition:</strong> CSS text properties text ke style ko
+        control karte hain, jaise alignment, decoration, transform, aur spacing.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        h1 {<br />
+        &nbsp;&nbsp;text-align: center;<br />
+        &nbsp;&nbsp;text-transform: uppercase;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Centers and capitalizes the text in &lt;h1&gt; tags.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_text.asp" target="_blank"
+          >CSS Text</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Fonts</h1>
+      <p>
+        <strong>Definition:</strong> CSS fonts properties kisi text ka font
+        family, size, weight aur style control karti hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;font-family: Arial, sans-serif;<br />
+        &nbsp;&nbsp;font-size: 18px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Sets Arial as the font and defines the size for &lt;p&gt; elements.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_font.asp" target="_blank"
+          >CSS Fonts</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Icons</h1>
+      <p>
+        <strong>Definition:</strong> CSS mein icons font libraries, jaise Font
+        Awesome, ke through add kiye ja sakte hain, ya images use ki ja sakti
+        hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;i class="fa fa-home"&gt;&lt;/i&gt; /* Font Awesome icon example */
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Displays a home icon if Font Awesome is included.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_icons.asp" target="_blank"
+          >CSS Icons</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Links</h1>
+      <p>
+        <strong>Definition:</strong> CSS link states (normal, hover, active,
+        visited) ko style kar sakta hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        a:link { color: blue; }<br />
+        a:hover { color: red; }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Link turns blue normally and red on hover.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_link.asp" target="_blank"
+          >CSS Links</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Lists</h1>
+      <p>
+        <strong>Definition:</strong> CSS lists ka style control karta hai, jaise
+        list-style-type, position, aur custom icons set kar sakta hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        ul {<br />
+        &nbsp;&nbsp;list-style-type: square;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Displays list items with square bullets.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_list.asp" target="_blank"
+          >CSS Lists</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Tables</h1>
+      <p>
+        <strong>Definition:</strong> CSS tables mein table borders, spacing, aur
+        alignment control karta hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        table {<br />
+        &nbsp;&nbsp;border-collapse: collapse;<br />
+        }<br />
+        th, td {<br />
+        &nbsp;&nbsp;border: 1px solid black;<br />
+        &nbsp;&nbsp;padding: 10px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Adds borders and padding to table cells.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_table.asp" target="_blank"
+          >CSS Tables</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Display</h1>
+      <p>
+        <strong>Definition:</strong> CSS display property element ki display
+        type ko define karta hai, jaise block, inline, inline-block, etc.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;display: block;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Makes the &lt;div&gt; element a block-level element.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_display_visibility.asp"
+          target="_blank"
+          >CSS Display</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Max-width</h1>
+      <p>
+        <strong>Definition:</strong> CSS max-width property element ki maximum
+        width define karti hai. Agar content is width se zyada hota hai to wrap
+        ho jata hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        img {<br />
+        &nbsp;&nbsp;max-width: 100%;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Makes the image responsive by not exceeding its container's width.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_max-width.asp"
+          target="_blank"
+          >CSS Max-width</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Position</h1>
+      <p>
+        <strong>Definition:</strong> CSS position property kisi element ki
+        position ko control karta hai, jaise static, relative, absolute, fixed,
+        ya sticky.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .absolute {<br />
+        &nbsp;&nbsp;position: absolute;<br />
+        &nbsp;&nbsp;top: 10px;<br />
+        &nbsp;&nbsp;left: 20px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Positions the element absolutely relative to its nearest positioned
+        ancestor.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_positioning.asp"
+          target="_blank"
+          >CSS Position</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Z-index</h1>
+      <p>
+        <strong>Definition:</strong> CSS z-index property stacking order ko
+        define karta hai. Higher z-index wale elements lower z-index wale
+        elements par dikhte hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .overlay {<br />
+        &nbsp;&nbsp;position: absolute;<br />
+        &nbsp;&nbsp;z-index: 1;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Places the element above other elements with a lower z-index.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_z-index.asp" target="_blank"
+          >CSS Z-index</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Overflow</h1>
+      <p>
+        <strong>Definition:</strong> CSS overflow property define karta hai ke
+        jab content element se bahar chala jaye to kya hona chahiye (hidden,
+        scroll, auto, visible).
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;overflow: auto;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Adds scrollbars if content exceeds the div's size.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_overflow.asp" target="_blank"
+          >CSS Overflow</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Float</h1>
+      <p>
+        <strong>Definition:</strong> CSS float property elements ko left ya
+        right side par float karne ke liye use hoti hai, allowing text and
+        inline elements to wrap around.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        img {<br />
+        &nbsp;&nbsp;float: left;<br />
+        &nbsp;&nbsp;margin: 10px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Floats the image to the left, allowing text to wrap around it.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_float.asp" target="_blank"
+          >CSS Float</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Inline-block</h1>
+      <p>
+        <strong>Definition:</strong> CSS inline-block property elements ko
+        inline position par display karta hai lekin unki dimensions define karne
+        ki ijaazat deta hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .box {<br />
+        &nbsp;&nbsp;display: inline-block;<br />
+        &nbsp;&nbsp;width: 100px;<br />
+        &nbsp;&nbsp;height: 100px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Displays the boxes in a line while allowing height and width to be set.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_inline-block.asp"
+          target="_blank"
+          >CSS Inline-block</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Align</h1>
+      <p>
+        <strong>Definition:</strong> CSS align property text ya inline elements
+        ko horizontally ya vertically align karne ke liye use hoti hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .center {<br />
+        &nbsp;&nbsp;text-align: center;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Centers the text inside the element.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_align.asp" target="_blank"
+          >CSS Align</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Combinators</h1>
+      <p>
+        <strong>Definition:</strong> CSS combinators selectors ko combine karte
+        hain, jisse nested elements ko select karna asaan hota hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div p {<br />
+        &nbsp;&nbsp;color: red;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Styles all &lt;p&gt; elements inside &lt;div&gt; elements to be red.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_combinators.asp"
+          target="_blank"
+          >CSS Combinators</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Pseudo-class</h1>
+      <p>
+        <strong>Definition:</strong> CSS pseudo-classes are used to define the
+        special state of an element. They allow you to apply styles based on the
+        element's state or its relationship to other elements in the document.
+        Pseudo-classes are defined by a single colon (:) before the class name.
+      </p>
+      <p><strong>Common Pseudo-classes:</strong></p>
+      <ul>
+        <li>
+          <strong>:hover</strong>: Applies styles when the user hovers over an
+          element with the mouse.
+        </li>
+        <li>
+          <strong>:active</strong>: Applies styles when an element is being
+          activated by the user (e.g., when a button is pressed).
+        </li>
+        <li>
+          <strong>:focus</strong>: Applies styles when an element, such as an
+          input field, receives focus.
+        </li>
+        <li>
+          <strong>:visited</strong>: Applies styles to links that have already
+          been visited by the user.
+        </li>
+        <li>
+          <strong>:nth-child(n)</strong>: Applies styles to elements based on
+          their order among their siblings. "n" can be a number, keyword, or
+          formula.
+        </li>
+        <li>
+          <strong>:first-child</strong>: Targets the first child element of a
+          parent.
+        </li>
+        <li>
+          <strong>:last-child</strong>: Targets the last child element of a
+          parent.
+        </li>
+      </ul>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        a:hover {<br />
+        &nbsp;&nbsp;color: red;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Changes the color of a link to red when hovered over.
+      </p>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        input:focus {<br />
+        &nbsp;&nbsp;border: 2px solid blue;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Changes the border color of an input field to blue when it is focused.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_pseudo_classes.asp"
+          target="_blank"
+          >CSS Pseudo-class</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Pseudo-element</h1>
+      <p>
+        <strong>Definition:</strong> CSS pseudo-elements allow you to style
+        specific parts of an element. They enable you to apply styles to
+        elements without adding extra markup in the HTML. Pseudo-elements are
+        defined by a double colon (::) syntax, distinguishing them from
+        pseudo-classes, which use a single colon (:).
+      </p>
+      <p><strong>Common Pseudo-elements:</strong></p>
+      <ul>
+        <li>
+          <strong>::before</strong>: Inserts content before the content of the
+          selected element.
+        </li>
+        <li>
+          <strong>::after</strong>: Inserts content after the content of the
+          selected element.
+        </li>
+        <li>
+          <strong>::first-line</strong>: Targets the first line of a block-level
+          element and allows you to style it differently.
+        </li>
+        <li>
+          <strong>::first-letter</strong>: Targets the first letter of a
+          block-level element, allowing for unique styling.
+        </li>
+        <li>
+          <strong>::selection</strong>: Styles the portion of a document that
+          has been highlighted by the user.
+        </li>
+        <li>
+          <strong>::placeholder</strong>: Styles the placeholder text in an
+          input element.
+        </li>
+      </ul>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        p::first-line {<br />
+        &nbsp;&nbsp;font-weight: bold;<br />
+        &nbsp;&nbsp;font-size: 1.2em;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Makes the first line of a paragraph bold and slightly larger.
+      </p>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        h1::after {<br />
+        &nbsp;&nbsp;content: " - Welcome!";<br />
+        &nbsp;&nbsp;color: gray;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Adds " - Welcome!" in gray color after every &lt;h1&gt; element.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_pseudo_elements.asp"
+          target="_blank"
+          >CSS Pseudo-element</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Opacity</h1>
+      <p>
+        <strong>Definition:</strong> CSS opacity property kisi element ki
+        transparency ko control karti hai, jahan 0 (completely transparent) se 1
+        (completely opaque) tak value ho sakti hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;opacity: 0.5;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Sets the element's opacity to 50%.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_image_transparency.asp"
+          target="_blank"
+          >CSS Opacity</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Navigation Bar</h1>
+      <p>
+        <strong>Definition:</strong> CSS navigation bar website ke menu ko style
+        karne ke liye use hoti hai, jisme links ko horizontal ya vertical align
+        kiya jata hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        nav ul {<br />
+        &nbsp;&nbsp;list-style-type: none;<br />
+        &nbsp;&nbsp;padding: 0;<br />
+        }<br />
+        nav ul li {<br />
+        &nbsp;&nbsp;display: inline;<br />
+        &nbsp;&nbsp;margin-right: 20px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Creates a horizontal navigation menu.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_navbar.asp" target="_blank"
+          >CSS Navigation Bar</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Dropdowns</h1>
+      <p>
+        <strong>Definition:</strong> CSS dropdown menus ko create karne ke liye
+        use hoti hai, jisme sub-menus ko hide/show kiya jata hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .dropdown {<br />
+        &nbsp;&nbsp;position: relative;<br />
+        }<br />
+        .dropdown-content {<br />
+        &nbsp;&nbsp;display: none;<br />
+        }<br />
+        .dropdown:hover .dropdown-content {<br />
+        &nbsp;&nbsp;display: block;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Shows the dropdown content when the dropdown is hovered over.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_dropdowns.asp"
+          target="_blank"
+          >CSS Dropdowns</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Image Gallery</h1>
+      <p>
+        <strong>Definition:</strong> CSS image gallery ek tareeqa hai multiple
+        tasavvuraton ko grid ya mosaic layout mein dikhane ka. Yeh web pages ki
+        visual appeal ko behtar banata hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .gallery {<br />
+        &nbsp;&nbsp;display: grid;<br />
+        &nbsp;&nbsp;grid-template-columns: repeat(auto-fill, minmax(200px,
+        1fr));<br />
+        &nbsp;&nbsp;gap: 10px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Yeh ek responsive image gallery layout banata hai jisme columns flexible
+        hain.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_image_gallery.asp"
+          target="_blank"
+          >CSS Image Gallery</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Image Sprites</h1>
+      <p>
+        <strong>Definition:</strong> CSS image sprites ka matlab hai multiple
+        tasavvuraton ko ek single image file mein mila dena, jo HTTP requests ki
+        tadad ko kam karta hai. Yeh website ki loading speed ko behtar banata
+        hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .sprite {<br />
+        &nbsp;&nbsp;background-image: url('sprite.png');<br />
+        &nbsp;&nbsp;background-repeat: no-repeat;<br />
+        }<br />
+        .icon1 {<br />
+        &nbsp;&nbsp;width: 50px;<br />
+        &nbsp;&nbsp;height: 50px;<br />
+        &nbsp;&nbsp;background-position: 0 0;<br />
+        }<br />
+        .icon2 {<br />
+        &nbsp;&nbsp;background-position: -50px 0;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Yeh sprite image se specific icons ko dikhata hai jo background position
+        par mabni hota hai.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_image_sprites.asp"
+          target="_blank"
+          >CSS Image Sprites</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Attribute Selectors</h1>
+      <p>
+        <strong>Definition:</strong> CSS attribute selectors aapko elements ko
+        unke attributes aur values ke buniyad par select karne ki ijaazat dete
+        hain, jo styling mein flexibility faraham karta hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        a[href="https://example.com"] {<br />
+        &nbsp;&nbsp;color: blue;<br />
+        }<br />
+        input[type="text"] {<br />
+        &nbsp;&nbsp;background-color: lightyellow;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Yeh specific links aur text input fields ko unke attributes ke buniyad
+        par style karta hai.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_attribute_selectors.asp"
+          target="_blank"
+          >CSS Attribute Selectors</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Forms</h1>
+      <p>
+        <strong>Definition:</strong> CSS ka istemal HTML forms ko style karne ke
+        liye kiya ja sakta hai, jo inki shakal aur istemal ko behtar banata hai.
+        Ismein inputs, buttons aur overall form layout shamil hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        form {<br />
+        &nbsp;&nbsp;background: #f9f9f9;<br />
+        &nbsp;&nbsp;padding: 20px;<br />
+        &nbsp;&nbsp;border-radius: 5px;<br />
+        }<br />
+        input[type="submit"] {<br />
+        &nbsp;&nbsp;background-color: green;<br />
+        &nbsp;&nbsp;color: white;<br />
+        &nbsp;&nbsp;padding: 10px 15px;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Yeh form ka background aur submit button ko style karta hai.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_form.asp" target="_blank"
+          >CSS Forms</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Counters</h1>
+      <p>
+        <strong>Definition:</strong> CSS counters ek tareeqa hai kisi count ko
+        track karne ka aur inhe automatically number dene ke liye istemal kiya
+        jata hai. Yeh aksar lists ya headings mein hota hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        ol {<br />
+        &nbsp;&nbsp;counter-reset: item;<br />
+        }<br />
+        li {<br />
+        &nbsp;&nbsp;counter-increment: item;<br />
+        &nbsp;&nbsp;list-style-type: none;<br />
+        }<br />
+        li::before {<br />
+        &nbsp;&nbsp;content: counter(item) ". ";<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">Yeh list items ko automatic number deta hai.</p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_counters.asp" target="_blank"
+          >CSS Counters</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Website Layout</h1>
+      <p>
+        <strong>Definition:</strong> CSS ka istemal web pages ke layout banane
+        ke liye kiya jata hai, jo elements ko mukhtalif tareeqon se arrange
+        karne ki ijaazat deta hai, jaise grids, flexbox, ya traditional box
+        models.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .container {<br />
+        &nbsp;&nbsp;display: flex;<br />
+        &nbsp;&nbsp;flex-direction: row;<br />
+        }<br />
+        .item {<br />
+        &nbsp;&nbsp;flex: 1;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Yeh items ko row mein arrange karta hai aur flexible layout banata hai.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_website_layout.asp"
+          target="_blank"
+          >CSS Website Layout</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Units</h1>
+      <p>
+        <strong>Definition:</strong> CSS units yeh tay karte hain ke
+        measurements kis tarah se express kiye jaate hain. Aam units mein pixels
+        (px), ems, rems, percentages, aur viewport units shamil hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;font-size: 16px;<br />
+        }<br />
+        .container {<br />
+        &nbsp;&nbsp;width: 100%;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Yeh font size aur container width ko mukhtalif units ka istemal karke
+        set karta hai.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/css/css_units.asp" target="_blank"
+          >CSS Units</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Specificity</h1>
+      <p>
+        <strong>Definition:</strong> CSS specificity yeh tay karta hai ke kis
+        style ko kisi element par lagoo kiya jaye jab kai styles lagoo kiye ja
+        sakte hain. Yeh un selectors ke types par mabni hota hai jo istemal kiye
+        gaye hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .class {<br />
+        &nbsp;&nbsp;color: red;<br />
+        }<br />
+        #id {<br />
+        &nbsp;&nbsp;color: blue;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        ID selector ka specificity class selector se zyada hota hai.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_specificity.asp"
+          target="_blank"
+          >CSS Specificity</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS !important</h1>
+      <p>
+        <strong>Definition:</strong> CSS mein !important rule kisi style ko
+        doosre conflicting styles par zyada ahmiyat dene ke liye istemal kiya
+        jata hai. Iska istemal kam se kam hona chahiye.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;color: green;<br />
+        }<br />
+        p.important {<br />
+        &nbsp;&nbsp;color: blue !important;<br />
+        }
+      </code>
+      <br />
+      <br />
+      <strong>Output:</strong>
+      <p class="output-box">
+        Blue color paragraph par apply hoga, chahe kisi aur rule mein koi aur
+        color specify kiya gaya ho.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_important.asp"
+          target="_blank"
+          >CSS !important</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Math Functions</h1>
+      <p>
+        <strong>Definition:</strong> CSS Math Functions aapko CSS mein
+        calculations karne ki ijaazat dete hain. Yeh functions web development
+        mein flexibility aur dynamic layouts banane ke liye bohot faydemand
+        hain. Yeh kuch popular functions hain:
+      </p>
+      <p>
+        <strong>1. calc():</strong> Is function ka istemal aapko do ya zyada
+        values ko combine karne ki ijaazat deta hai. Yeh different units ke
+        saath bhi kaam kar sakta hai, jaise pixels (px), percentages (%), ems,
+        etc. <br />Example:
+        <code>width: calc(100% - 50px);</code>
+        Yeh width ko parent element ki 100% width se 50 pixels kam karke set
+        karta hai.
+      </p>
+      <p>
+        <strong>2. min():</strong> Is function ka istemal kisi do values mein se
+        choti value ko select karne ke liye hota hai. Yeh responsive design mein
+        madadgar hota hai, jahan aap chahte hain ke element ki size kabhi bhi
+        exceed na kare. <br />Example:
+        <code>width: min(50%, 300px);</code>
+        Yeh width ko 50% ya 300 pixels mein se choti value set karega.
+      </p>
+      <p>
+        <strong>3. max():</strong> Is function ka istemal kisi do values mein se
+        badi value ko select karne ke liye hota hai. Yeh aapko ensure karta hai
+        ke element ki size kabhi bhi kam na ho. <br />Example:
+        <code>width: max(200px, 20%);</code>
+        Yeh width ko 200 pixels ya 20% mein se badi value set karega.
+      </p>
+      <p>
+        <strong>4. clamp():</strong> Is function ka istemal kisi value ko
+        minimum aur maximum limits ke beech constrain karne ke liye hota hai.
+        Yeh function responsive design mein madadgar hai. <br />Example:
+        <code>font-size: clamp(16px, 5vw, 24px);</code>
+        Yeh font-size ko 16 pixels se 24 pixels ke beech rakhta hai, jo viewport
+        width ke hisaab se adjust hota hai.
+      </p>
+      <p>
+        CSS Math Functions ki wajah se aap web design mein zyada flexibility
+        hasil karte hain, jisse aapki website har device par behtar tarah se
+        display hoti hai.
+      </p>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/css/css_math_functions.asp"
+          target="_blank"
+          >CSS Math Functions</a
+        >
+      </div>
+    </section>
+
+    <section id="title-section">
+      <h1 class="main-title">CSS Advanced</h1>
+    </section>
+
+    <!-- CSS Rounded Corners -->
+    <section
+      style="
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1>1. CSS Rounded Corners</h1>
+      <p>
+        <strong>Definition:</strong> Rounded corners ko create karne ke liye
+        "border-radius" property use hoti hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;border-radius: 15px;<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">
+        The corners of the div element will be rounded with a 15px radius.
+      </p>
+      <div
+        style="
+          border-radius: 15px;
+          background-color: lightblue;
+          width: 200px;
+          height: 100px;
+        "
+      ></div>
+    </section>
+
+    <!-- CSS Border Images -->
+    <section
+      style="
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1>2. CSS Border Images</h1>
+      <p>
+        <strong>Definition:</strong> Border image ek image ko border ke tor par
+        use karta hai instead of a solid color or line.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;border: 10px solid transparent;<br />
+        &nbsp;&nbsp;border-image: url('border.png') 30 round;<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">The div will have a custom image as its border.</p>
+      <div
+        style="
+          border: 10px solid transparent;
+          border-image: url('https://via.placeholder.com/200') 30 round;
+          width: 200px;
+          height: 100px;
+        "
+      ></div>
+    </section>
+
+    <!-- CSS Backgrounds -->
+    <section
+      style="
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1>3. CSS Backgrounds</h1>
+      <p>
+        <strong>Definition:</strong> Background properties ko elements ke liye
+        background color, image, position, repeat aur size ko define karne ke
+        liye use kiya jata hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        div {<br />
+        &nbsp;&nbsp;background-color: lightblue;<br />
+        &nbsp;&nbsp;background-image: url('background.jpg');<br />
+        &nbsp;&nbsp;background-repeat: no-repeat;<br />
+        &nbsp;&nbsp;background-size: cover;<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">
+        The div will have a light blue background color and an image that covers
+        the element.
+      </p>
+      <div
+        style="
+          background-color: lightblue;
+          background-image: url('https://via.placeholder.com/200');
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 200px;
+          height: 100px;
+        "
+      ></div>
+    </section>
+
+    <!-- CSS Colors -->
+    <section
+      style="
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1>4. CSS Colors</h1>
+      <p>
+        <strong>Definition:</strong> CSS me colors ko elements ki styling ke
+        liye use kiya jata hai, jese text, backgrounds, borders waghera.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;color: #ff0000;<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">
+        The text inside the &lt;p&gt; element will be red.
+      </p>
+      <p style="color: #ff0000">This is red text.</p>
+    </section>
+
+    <!-- CSS Color Keywords -->
+    <section
+      style="
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1>5. CSS Color Keywords</h1>
+      <p>
+        <strong>Definition:</strong> CSS color keywords pre-defined color names
+        hain jo different colors ko represent karte hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        p {<br />
+        &nbsp;&nbsp;color: blue;<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">
+        The text inside the &lt;p&gt; element will be blue using the keyword
+        "blue".
+      </p>
+      <p style="color: blue">This is blue text.</p>
+    </section>
+
+    <section>
+      <h1>CSS Gradients</h1>
+      <p>
+        <strong>Definition:</strong> CSS gradients kisi element ke background
+        mein color transitions create karne ke liye istemal hote hain.
+        <br />Example:
+        <code>background: radial-gradient(circle, yellow, green);</code>
+        Yeh background mein yellow se green tak ka gradient create karta hai.
+      </p>
+      <div
+        class="output"
+        style="background: radial-gradient(circle, yellow, green); height: 50px"
+      >
+        Output: Yeh box ka background radial gradient hai.
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Shadows</h1>
+      <p>
+        <strong>Definition:</strong> CSS shadows ka istemal kisi element ke
+        andar ya bahar shadow effects create karne ke liye hota hai.
+        <br />Example:
+        <code>box-shadow: 2px 2px 5px gray;</code>
+        Yeh element ke aas-paas 2 pixels ka shadow create karta hai.
+      </p>
+      <div class="output" style="box-shadow: 2px 2px 5px gray; padding: 10px">
+        Output: Yeh box ke aas-paas shadow hai.
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Text Effects</h1>
+      <p>
+        <strong>Definition:</strong> CSS text effects ka istemal text par visual
+        effects apply karne ke liye hota hai, jaise shadows, strokes, aur
+        transitions. <br />Example:
+        <code>text-shadow: 1px 1px 2px black;</code>
+        Yeh text ko shadow deta hai jo isay zyada visible banata hai.
+      </p>
+      <div class="output" style="text-shadow: 1px 1px 2px black">
+        Output: Yeh text ka shadow effect hai.
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Web Fonts</h1>
+      <p>
+        <strong>Definition:</strong> CSS web fonts ka istemal custom fonts ko
+        web pages par load karne ke liye hota hai, jisse typography ko enhance
+        kiya ja sakta hai. <br />Example:
+        <code
+          >@import
+          url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');</code
+        >
+        Yeh Roboto font ko import karta hai.
+      </p>
+      <div class="output" style="font-family: 'Roboto', sans-serif">
+        Output: Yeh text Roboto font mein hai.
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS 2D Transforms</h1>
+      <p>
+        <strong>Definition:</strong> CSS 2D transforms kisi element ko rotate,
+        scale, translate, ya skew karne ke liye istemal hote hain.
+        <br />Example:
+        <code>transform: rotate(45deg);</code>
+        Yeh element ko 45 degrees tak ghoomata hai.
+      </p>
+      <div
+        class="output"
+        style="
+          transform: rotate(45deg);
+          width: 50px;
+          height: 50px;
+          background: #4caf50;
+        "
+      >
+        Output: Yeh box 45 degrees ghooma hua hai.
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS 3D Transforms</h1>
+      <p>
+        <strong>Definition:</strong> CSS 3D transforms kisi element ko 3D space
+        mein manipulate karne ke liye istemal hote hain, jaise perspective,
+        rotateX, rotateY, etc. <br />Example:
+        <code>transform: perspective(500px) rotateY(30deg);</code>
+        Yeh element ko 3D mein ghoomata hai.
+      </p>
+      <div
+        class="output"
+        style="
+          width: 50px;
+          height: 50px;
+          background: #2196f3;
+          transform: perspective(500px) rotateY(30deg);
+        "
+      >
+        Output: Yeh box 3D perspective ke sath ghooma hua hai.
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Transitions</h1>
+      <p>
+        <strong>Definition:</strong> CSS transitions kisi property ke change
+        hone par smooth animations create karne ke liye istemal hote hain.
+        <br />Example:
+        <code>transition: all 0.5s ease;</code>
+        Yeh sabhi properties par 0.5 seconds mein transition apply karta hai.
+      </p>
+      <div
+        class="output"
+        style="
+          transition: background-color 0.5s ease;
+          background-color: red;
+          width: 100px;
+          height: 100px;
+        "
+        onmouseover="this.style.backgroundColor='green'"
+        onmouseout="this.style.backgroundColor='red'"
+      >
+        Output: Yeh box hover karne par smooth transition se color badalta hai.
+      </div>
+    </section>
+
+    <section>
+      <h1>CSS Animations</h1>
+      <p>
+        <strong>Definition:</strong> CSS animations kisi element par complex
+        animations create karne ke liye istemal hote hain, jo keyframes ke
+        zariye control kiye jaate hain. <br />Example:
+        <code
+          >@keyframes example { from {background-color: red;} to
+          {background-color: yellow;} }</code
+        >
+        Yeh animation ko red se yellow background color change karne ke liye
+        define karta hai.
+      </p>
+      <div
+        class="output"
+        style="width: 100px; height: 100px; animation: example 2s infinite"
+      >
+        Output: Yeh box continuously red se yellow background mein animate hota
+        hai.
+      </div>
+    </section>
+
+    <!-- CSS Tooltips -->
+    <section>
+      <h1>1. CSS Tooltips</h1>
+      <p>
+        <strong>Definition:</strong> Tooltips woh message hotay hain jo kisi
+        element par hover karne se display hotay hain.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        .tooltip {<br />
+        &nbsp;&nbsp;position: relative;<br />
+        &nbsp;&nbsp;display: inline-block;<br />
+        }<br /><br />
+        .tooltip .tooltiptext {<br />
+        &nbsp;&nbsp;visibility: hidden;<br />
+        &nbsp;&nbsp;background-color: black;<br />
+        &nbsp;&nbsp;color: #fff;<br />
+        &nbsp;&nbsp;text-align: center;<br />
+        &nbsp;&nbsp;padding: 5px 0;<br />
+        &nbsp;&nbsp;border-radius: 6px;<br />
+        &nbsp;&nbsp;position: absolute;<br />
+        &nbsp;&nbsp;z-index: 1;<br />
+        }<br /><br />
+        .tooltip:hover .tooltiptext {<br />
+        &nbsp;&nbsp;visibility: visible;<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">
+        Tooltip will appear when the element is hovered over.
+      </p>
+    </section>
+
+    <!-- CSS Style Images -->
+    <section>
+      <h1>2. CSS Style Images</h1>
+      <p>
+        <strong>Definition:</strong> CSS ka istemal images ko style karne ke
+        liye hota hai, jese borders, shadows, aur effects.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        img {<br />
+        &nbsp;&nbsp;border-radius: 8px;<br />
+        &nbsp;&nbsp;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">Image will have rounded corners and a shadow.</p>
+    </section>
+
+    <!-- CSS Image Reflection -->
+    <section>
+      <h1>3. CSS Image Reflection</h1>
+      <p>
+        <strong>Definition:</strong> CSS image reflection ek effect hai jisme
+        image ka reflection uske niche dikhai deta hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        img {<br />
+        &nbsp;&nbsp;-webkit-box-reflect: below 5px linear-gradient(transparent,
+        transparent, rgba(0,0,0,0.2));<br />
+        }
+      </code>
+      <strong>Output:</strong>
+      <p class="output-box">The image will have a reflection below it.</p>
+    </section>
+
+    <section id="footer-section">
+      <footer>
+        <p>Copyright © 2024 write by : <span>Chaudhary Abdul Rehman</span></p>
+        <!-- Copyright notice in footer -->
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Form</title>
+    <link rel="shortcut icon" href="html-5.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="Html form.css" />
+  </head>
+  <body>
+    <section id="title-section">
+      <h1 class="main-title">HTML Forms</h1>
+    </section>
+
+    <section>
+      <h1>HTML Forms</h1>
+      <p>
+        <strong>Definition:</strong> HTML Forms web pages par user input collect
+        karne ke liye banaye gaye hain. Yeh mostly login, registration aur
+        feedback forms mein use hote hain, jahan user se data liya ja sakta hai
+        aur server par bheja ja sakta hai.
+      </p>
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;form action="/submit" method="POST"&gt; <br />
+        &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt; <br />
+        &nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt; <br />
+        &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt; <br />
+        &nbsp;&nbsp;&lt;input type="email" id="email" name="email"&gt; <br />
+        &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt; <br />
+        &lt;/form&gt;
+      </code>
+      <p><strong>Output:</strong></p>
+      <div class="output">
+        <form>
+          <label for="name">Name:</label> <br />
+          <input type="text" id="name" name="name" /> <br />
+          <br />
+          <label for="email">Email:</label> <br />
+          <input type="email" id="email" name="email" /> <br />
+          <br />
+          <input type="submit" value="Submit" class="output-btn" />
+        </form>
+      </div>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"
+          >HTML Forms</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>HTML Form Attributes</h1>
+      <br />
+      <h2>The Action Attribute</h2>
+      <form action="https://www.google.com/">
+        <label for="fname7">First Name:</label> <br />
+        <input type="text" id="fname7" name="fname" /><br /><br />
+        <label for="lname7">Last Name:</label> <br />
+        <input type="text" id="lname7" name="lname" /><br /><br />
+        <input type="submit" value="Google open" class="output-btn" />
+      </form>
+      <br /><br />
+
+      <h2>The Target Attribute</h2>
+      <form action="https://www.google.com/" target="_blank">
+        <label for="fname8">First Name:</label> <br />
+        <input type="text" id="fname8" name="fname" /><br /><br />
+        <label for="lname8">Last Name:</label> <br />
+        <input type="text" id="lname8" name="lname" /><br /><br />
+        <input
+          type="submit"
+          value="Google open in new tab"
+          class="output-btn"
+        />
+      </form>
+      <br /><br />
+
+      <h2>The Method Attribute</h2>
+      <h3>Method GET</h3>
+      <form action="/action_page.php" method="get">
+        <label for="fname9">First Name:</label> <br />
+        <input type="text" id="fname9" name="fname" /><br /><br />
+        <label for="lname9">Last Name:</label> <br />
+        <input type="text" id="lname9" name="lname" /><br /><br />
+        <label for="password123">Password:</label> <br />
+        <input type="password" id="password123" name="password" /><br /><br />
+        <input type="submit" class="output-btn" />
+      </form>
+
+      <h3>Method POST</h3>
+      <form action="/action_page.php" method="post">
+        <label for="fname10">First Name:</label> <br />
+        <input type="text" id="fname10" name="fname" /><br /><br />
+        <label for="lname10">Last Name:</label> <br />
+        <input type="text" id="lname10" name="lname" /><br /><br />
+        <input type="submit" class="output-btn" />
+      </form>
+      <br /><br />
+
+      <h2>The Autocomplet Attribute</h2>
+      <form>
+        <label for="acomplete">Your Name:</label><br />
+        <input
+          type="text"
+          name="yourname"
+          id="acomplete"
+          autocomplete="off"
+        /><br /><br />
+        <label for="acomplete1">Your Name: (Autocomplet)</label><br />
+        <input
+          type="text"
+          name="yourname"
+          id="acomplete1"
+          autocomplete="on"
+        /><br /><br />
+        <input type="submit" class="output-btn" />
+      </form>
+      <br /><br />
+
+      <h2>The Novalidate Attribute</h2>
+      <h3>Use With Out Novalidate</h3>
+      <form>
+        <label for="fname11">First Name:</label> <br />
+        <input type="text" id="fname11" name="fname" required /><br /><br />
+        <label for="lname11">Last Name:</label> <br />
+        <input type="text" id="lname11" name="lname" required /><br /><br />
+        <input type="submit" class="output-btn" ` />
+      </form>
+
+      <h3>Use With Novalidate</h3>
+      <form novalidate>
+        <label for="fname11">First Name:</label> <br />
+        <input type="text" id="fname11" name="fname" required /><br /><br />
+        <label for="lname11">Last Name:</label> <br />
+        <input type="text" id="lname11" name="lname" required /><br /><br />
+        <input type="submit" class="output-btn" />
+      </form>
+      <br /><br />
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/html/html_forms_attributes.asp"
+          target="_blank"
+          >HTML Form Attributes</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>HTML Form Elements</h1>
+      <br />
+      <h2>The Output Element</h2>
+      <form
+        action="Menu Bar.html"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+      >
+        0
+        <input type="range" id="a" name="a" value="50" />
+        100 +
+        <input type="number" id="b" name="b" value="50" />
+        =
+        <output name="x" for="a b"></output>
+        <br /><br />
+        <input type="submit" class="output-btn" />
+      </form>
+      <h2>The Select Element</h2>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi" selected>Audi</option>
+      </select>
+      <input type="submit" class="output-btn" /><br /><br />
+
+      <h2>The Datalist Element</h2>
+      <label for="mobile">Choose a Mobile:</label><br />
+      <input list="mobile" />
+      <datalist id="mobile">
+        <option value="Iphone"></option>
+        <option value="Samsung"></option>
+        <option value="Redmi"></option>
+        <option value="Motrola"></option>
+        <option value="Oneplus"></option>
+        <option value="Nokia"></option>
+      </datalist>
+      <input type="submit" class="output-btn" /><br /><br />
+
+      <h2>The Textarea Element</h2>
+      <textarea name="message" cols="40" rows="5">
+  The cat was playing in the garden.</textarea
+      >
+      <br /><br />
+      <input type="submit" class="output-btn" /><br /><br />
+      <h2>The Button Element</h2>
+      <form>
+        <label for="fname12">First Name:</label> <br />
+        <input type="text" id="fname12" name="fname" /><br /><br />
+        <label for="lname12">Last Name:</label> <br />
+        <input type="text" id="lname12" name="lname" /><br /><br />
+        <button
+          type="button"
+          onclick="alert('Thanks You So Much.')"
+          class="output-btn"
+        >
+          Submit</button
+        ><br /><br />
+      </form>
+
+      <h2>The Fieldset and Legend Elements</h2>
+      <fieldset>
+        <legend>Personl Info:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" placeholder="Abdul" /><br />
+        <label for="lname">Last name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Rehman"
+        /><br /><br />
+        <input type="submit" value="Submit" class="output-btn" />
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Contact Info:</legend>
+        <label for="phone">Phone No:</label><br />
+        <input type="tel" id="phone" name="phone" /><br />
+        <label for="useremail6">Email:</label><br />
+        <input type="email" id="useremail6" name="useremail6" /><br /><br />
+        <input type="submit" value="Submit" class="output-btn" />
+      </fieldset>
+      <br />
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/html/html_form_elements.asp"
+          target="_blank"
+          >HTML Form Elements</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>Form Input Types</h1>
+      <form>
+        <br />
+
+        <label for="fname">First Name:</label> <br />
+        <input type="text" id="fname" name="fname" placeholder="Abdul" />
+        <br /><br />
+
+        <label for="lname">Last Name:</label> <br />
+        <input type="text" id="lname" name="lname" placeholder="Rehman" />
+        <br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="exemple123@gmail.com"
+        /><br /><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" name="password" id="password" /><br /><br />
+
+        <label for="phone">Phone No:</label><br />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Enter Phone no"
+        /><br /><br />
+
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" name="dob" id="dob" /><br /><br />
+
+        <label for="dobmonth">DOB Month:</label><br />
+        <input type="month" name="dob" id="dobmonth" /><br /><br />
+
+        <label for="date&time">Date & Time: </label><br />
+        <input
+          type="datetime-local"
+          name="date&time"
+          id="date&time"
+        /><br /><br />
+
+        <label for="week">Week:</label><br />
+        <input type="week" name="week" id="week" /><br /><br />
+
+        <label for="time">Time:</label><br />
+        <input type="time" name="time" id="time" /><br /><br />
+
+        <label for="gender">Gender:</label><br />
+        Male <input type="radio" name="gender" id="gender" /><br />
+        Female <input type="radio" name="gender" id="gender" /><br />
+        Other <input type="radio" name="gender" id="gender" /><br /><br />
+
+        <label for="fav_conutry">Your Favorite Conutry:</label><br />
+        Makkah :<input
+          type="checkbox"
+          name="fav_conutry"
+          id="fav_conutry"
+        /><br />
+        Madinah :<input
+          type="checkbox"
+          name="fav_conutry"
+          id="fav_conutry"
+        /><br />
+        Pakistan :<input
+          type="checkbox"
+          name="fav_conutry"
+          id="fav_conutry"
+        /><br /><br />
+
+        <label for="color">Choose the Color:</label><br />
+        <input type="color" name="choosecolor" id="color" /><br /><br />
+
+        <label for="range">Select the Volume:</label><br />
+        0
+        <input type="range" name="sel_vol" id="range" /> 100<br /><br />
+
+        <label for="url">Enter URL: </label><br />
+        <input type="url" name="url" id="url" /><br /><br />
+
+        <label for="file">Choose the File:</label><br />
+        <input type="file" name="userfile" id="file" /><br /><br />
+
+        <label for="num">Quantity (between 5 and 15):</label><br />
+        <input type="number" name="num" id="num" min="5" max="15" /><br /><br />
+
+        <input
+          type="image"
+          src="images/submit logo.png"
+          alt="Submit Button"
+          style="width: 70px; height: 60px"
+        />
+        <input
+          type="image"
+          src="images/reset button.png"
+          alt="Reset Button"
+          style="width: 50px; height: 50px"
+        /><br /><br />
+
+        <label for="comment">Comment Hear:</label><br />
+        <input
+          type="comment"
+          name="comment"
+          id="comment"
+          style="width: 300px; height: 150px"
+        /><br /><br />
+      </form>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/html/html_form_input_types.asp"
+          target="_blank"
+          >Form Input Types</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <form>
+        <h1>HTML Input Attributes</h1>
+
+        <br />
+
+        <h2>The value Attribute</h2>
+        <label for="yourname">Your Name:</label><br />
+        <input type="text" name="yourname" id="yourname" value="Your Name" />
+
+        <h2>The placeholder Attribute</h2>
+        <label for="yourname1">Your Name:</label><br />
+        <input
+          type="text"
+          name="yourname"
+          id="yourname1"
+          placeholder="Your Name"
+        />
+
+        <h2>The Readonly Attribute</h2>
+        <label for="yourname2">Your Name:</label><br />
+        <input
+          type="text"
+          name="yourname"
+          id="yourname2"
+          value="Your Name"
+          readonly
+        />
+
+        <h2>The Disabled Attribute</h2>
+        <label for="yourname3">Your Name:</label><br />
+        <input
+          type="text"
+          name="yourname"
+          id="yourname3"
+          value="Your Name"
+          disabled
+        />
+
+        <h2>The Size Attribute</h2>
+        <label for="yourname4">Your Name:</label><br />
+        <input type="text" name="yourname" id="yourname4" size="30" /><br />
+        <label for="pin">Your Pin:</label><br />
+        <input type="text" name="pin" id="pin" size="5" />
+
+        <h2>The Maxlength Attribute</h2>
+        <label for="pin1">Your Pin (Maxlength is 5):</label><br />
+        <input type="text" name="pin" id="pin1" size="5" maxlength="5" />
+
+        <h2>The Min and Max Attributes</h2>
+        <label for="num">Quantity (between 5 and 15):</label><br />
+        <input type="number" name="num" id="num" min="5" max="15" />
+
+        <h2>The Multiple Attribute</h2>
+        <h3>Multiple Files Selects</h3>
+        <label for="file1">Select Files:</label><br />
+        <input type="file" name="userfile" id="file1" multiple />
+
+        <h3>One File Select</h3>
+        <label for="file2">Select File:</label><br />
+        <input type="file" name="userfile" id="file2" />
+
+        <h2>The Required Attribute</h2>
+        <label for="name1">Your Name:</label><br />
+        <input
+          type="text"
+          name="name"
+          id="name1"
+          placeholder="Your Name"
+          required
+        />
+
+        <h2>The Step Attribute</h2>
+        <label for="points">Points (3 by 3 Steps):</label><br />
+        <input type="number" name="points" id="points" step="3" />
+
+        <h2>The Autofocus Attribute</h2>
+        <label for="afocus">Your Name:</label><br />
+        <input type="text" name="yourname" id="afocus" /><br />
+        <label for="afocus">Your Name (Autofocus):</label><br />
+        <input type="text" name="yourname" id="afocus" <!--autofocus-- />
+
+        <h2>The Height and Width Attributes</h2>
+        <label for="pic">Image:</label><br />
+        <input
+          type="image"
+          src="images/pic3.jpg"
+          name="pic"
+          id="pic"
+          width="200"
+          height="200"
+        />
+
+        <h2>The pattern Attribute</h2>
+        <p>uncomplete ###</p>
+
+        <br /><br />
+        <input type="submit" class="output-btn" />
+        <input type="reset" class="output-btn" />
+      </form>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/html/html_form_attributes.asp"
+          target="_blank"
+          >HTML Input Attributes</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>HTML Input Form Attributes</h1>
+
+      <br />
+      <h2>The Form Attribute</h2>
+      <h3>Form 1</h3>
+      <form id="form1">
+        <label for="fname1">First Name:</label><br />
+        <input type="text" name="fname" id="fname1" /><br />
+        <label for="lname1">Last Name:</label><br />
+        <input type="text" name="lname" id="lname1" /><br />
+        <label for="useremail">Email:</label><br />
+        <input type="email" name="useremail" id="useremail" /><br /><br />
+        <input type="submit" class="output-btn" />
+      </form>
+
+      <h2>This input Link by Form 1</h2>
+      <label for="pw">Password:</label><br />
+      <input type="password" name="password" id="pw" form="form1" />
+      <br /><br />
+
+      <h2>The Formaction Attribute</h2>
+      <form action="Menu Bar.html">
+        <label for="fname2">First Name:</label><br />
+        <input type="text" name="fname" id="fname2" /><br />
+        <label for="lname2">Last Name:</label><br />
+        <input type="text" name="lname" id="lname2" /><br />
+        <label for="useremail1">Email:</label><br />
+        <input type="email" name="useremail" id="useremail1" /><br /><br />
+        <input
+          type="submit"
+          value="Open the Menu Bar Page "
+          class="output-btn"
+        />
+        <input
+          type="submit"
+          value="Open the New Site Page"
+          formaction="New Site.html"
+          class="output-btn"
+        />
+        <br /><br />
+      </form>
+
+      <h2>The Formmethod Attribute</h2>
+      <form method="get">
+        <label for="fname3">First Name:</label><br />
+        <input type="text" name="fname" id="fname3" /><br />
+        <label for="lname3">Last Name:</label><br />
+        <input type="text" name="lname" id="lname3" /><br />
+        <label for="useremail2">Email:</label><br />
+        <input type="email" name="useremail" id="useremail2" /><br /><br />
+        <input type="submit" value="Submit using GET" class="output-btn" />
+        <input
+          type="submit"
+          value="Submit using POST"
+          formmethod="post"
+          class="output-btn"
+        />
+      </form>
+      <br /><br />
+
+      <h2>The Formtarget Attribute</h2>
+      <form>
+        <label for="fname4">First Name:</label><br />
+        <input type="text" name="fname" id="fname4" required /><br />
+        <label for="lname4">Last Name:</label><br />
+        <input type="text" name="lname" id="lname4" required /><br />
+        <label for="useremail3">Email:</label><br />
+        <input type="email" name="useremail" id="useremail3" /><br /><br />
+        <input type="submit" value="Open This Tab" class="output-btn" />
+        <input
+          type="submit"
+          value="Open This New Tab"
+          formtarget="_blank"
+          class="output-btn"
+        />
+        <br /><br />
+      </form>
+
+      <h2>The Formnovalidate Attribute</h2>
+      <form>
+        <label for="fname5">First Name:</label><br />
+        <input type="text" name="fname" id="fname5" /><br />
+        <label for="lname5">Last Name:</label><br />
+        <input type="text" name="lname" id="lname5" /><br />
+        <label for="useremail4">Email:</label><br />
+        <input
+          type="email"
+          name="useremail"
+          id="useremail4"
+          required
+        /><br /><br />
+        <input type="submit" value="Required Email" class="output-btn" />
+        <input
+          type="submit"
+          value="No Required Email"
+          formnovalidate
+          class="output-btn"
+        />
+        <br /><br />
+      </form>
+
+      <h2>The Formenctype Attribute</h2>
+      <p>uncomplete ###</p>
+      <form enctype="application/x-www-form-urlencoded">
+        <label for="fname6">First Name:</label><br />
+        <input type="text" name="fname" id="fname6" /><br />
+        <label for="lname6">Last Name:</label><br />
+        <input type="text" name="lname" id="lname6" /><br />
+        <label for="useremail5">Email:</label><br />
+        <input type="email" name="useremail" id="useremail5" /><br />
+        <label for="file3">File:</label><br />
+        <input type="file" name="file" id="file3" /><br /><br />
+        <input type="submit" value="Submit" class="output-btn" />
+        <input
+          type="submit"
+          value="Submit as Multipart/form-data"
+          formenctype="multipart/form-data"
+          class="output-btn"
+        />
+      </form>
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/html/html_form_attributes_form.asp"
+          target="_blank"
+          >HTML Input Form Attributes</a
+        >
+      </div>
+    </section>
+
+    <section id="footer-section">
+      <footer>
+        <p>Copyright © 2024 write by : <span>Chaudhary Abdul Rehman</span></p>
+      </footer>
+    </section>
+  </body>
+</html>

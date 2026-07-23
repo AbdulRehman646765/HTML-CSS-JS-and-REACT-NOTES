@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Async</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/js logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Js Tutorial.css" />
+  </head>
+  <body>
+    <section id="title-section">
+      <header>
+        <h1 class="main-title">JS Async (Advanced topics)</h1>
+      </header>
+    </section>
+
+    <section>
+      <h1>77. JS Callbacks</h1>
+      <p>
+        <strong>Definition:</strong> Callback function woh function hota hai jo
+        dusre function ko argument ke tor par diya jata hai aur woh function ki
+        execution ke baad call hota hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        function myFunction(callback) {<br />
+        // Function code<br />
+        callback();<br />
+        }<br />
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        function greet() {<br />
+        console.log("Hello!");<br />
+        }<br />
+        myFunction(greet);<br />
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Hello!</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_callback.asp" target="_blank"
+          >JS Callbacks</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>78. JS Asynchronous</h1>
+      <p>
+        <strong>Definition:</strong> Asynchronous programming mein code aisa
+        likha jata hai jo dusre code ki execution ke intezar ke baghair chalta
+        hai, jisse performance improve hoti hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        setTimeout(function() {<br />
+        // Code to execute after delay<br />
+        }, 1000);<br />
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        console.log("Start");<br />
+        setTimeout(function() {<br />
+        console.log("Async operation");<br />
+        }, 2000);<br />
+        console.log("End");<br />
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Start<br />End<br />Async operation</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_async.asp" target="_blank"
+          >JS Asynchronous</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>79. JS Promises</h1>
+      <p>
+        <strong>Definition:</strong> Promise ek object hai jo future mein kisi
+        value ko represent karta hai, jo abhi available nahi hai, lekin aage
+        chal kar available ho sakti hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        const myPromise = new Promise((resolve, reject) => {<br />
+        // Asynchronous operation<br />
+        if (/* operation successful */) {<br />
+        resolve("Success!");<br />
+        } else {<br />
+        reject("Failure!");<br />
+        }<br />
+        });<br />
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        myPromise.then(result => {<br />
+        console.log(result);<br />
+        }).catch(error => {<br />
+        console.log(error);<br />
+        });<br />
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Success!</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_promise.asp" target="_blank"
+          >JS Promises</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>80. JS Async/Await</h1>
+      <p>
+        <strong>Definition:</strong> Async/Await JavaScript mein asynchronous
+        programming ko likhne ka aik asaan tareeqa hai jo promises ko use karte
+        hue asynchronous code ko sequentially execute karta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        async function myFunction() {<br />
+        const result = await myPromise;<br />
+        console.log(result);<br />
+        }<br />
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        async function fetchData() {<br />
+        const response = await fetch("https://api.example.com/data");<br />
+        const data = await response.json();<br />
+        console.log(data);<br />
+        }<br />
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Data fetched from API</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_async.asp" target="_blank"
+          >JS Async/Await</a
+        >
+      </div>
+    </section>
+
+    <section id="title-section">
+      <h1 class="main-title">JS HTML DOM</h1>
+    </section>
+
+    <section>
+      <h1>81. DOM Intro</h1>
+      <p>
+        <strong>Definition:</strong> DOM (Document Object Model) web pages ka
+        structure represent karta hai, jahan JavaScript isse manipulate karne ke
+        liye access kar sakta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        document.getElementById("elementID");<br />
+        document.querySelector(".className");
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="example"&gt;Hello World!&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        document.getElementById("example").innerHTML = "Hello DOM!";<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Hello DOM!</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank"
+          >JS DOM Intro</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>82. DOM Methods</h1>
+      <p>
+        <strong>Definition:</strong> DOM methods woh functions hain jo DOM
+        elements ko create, remove, ya manipulate karne ke liye istemal hoti
+        hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        document.createElement("elementName");<br />
+        parentElement.appendChild(childElement);
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="parent"&gt;&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        var newDiv = document.createElement("div");<br />
+        newDiv.innerHTML = "I am a new div!";<br />
+        document.getElementById("parent").appendChild(newDiv);<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">I am a new div!</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_methods.asp"
+          target="_blank"
+          >JS DOM Methods</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>83. DOM Document</h1>
+      <p>
+        <strong>Definition:</strong> DOM document object webpage ka
+        representation hai jo HTML document ki structure ko represent karta hai.
+        Ye JavaScript ko document ke andar elements aur attributes ke saath
+        interact karne ki ijazat deta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        document.getElementsByTagName("tagName");<br />
+        document.getElementById("elementID");
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;h1 id="header"&gt;Welcome to DOM&lt;/h1&gt;<br />
+        &lt;script&gt;<br />
+        var header = document.getElementById("header");<br />
+        header.style.color = "blue";<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box" style="color: blue">Welcome to DOM</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_document.asp"
+          target="_blank"
+          >JS DOM Document</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>84. DOM Elements</h1>
+      <p>
+        <strong>Definition:</strong> DOM elements woh parts hain jo HTML mein
+        define kiye gaye hain, jaise <code>&lt;div&gt;</code>,
+        <code>&lt;span&gt;</code>, ya <code>&lt;h1&gt;</code>. JavaScript in
+        elements tak direct access aur manipulation ki ijazat deta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        document.getElementById("elementID");<br />
+        document.querySelector(".className");
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="example"&gt;Hello World!&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        document.getElementById("example").innerHTML = "Hello JavaScript!";<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Hello JavaScript!</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_elements.asp"
+          target="_blank"
+          >JS DOM Elements</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>85. DOM HTML</h1>
+      <p>
+        <strong>Definition:</strong> DOM HTML HTML elements ko JavaScript ke
+        zariye access aur manipulate karne ka tareeqa hai. Is se aap elements ki
+        content aur attributes ko change kar sakte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        document.documentElement;<br />
+        document.body;<br />
+        document.head;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="content"&gt;Original Content&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        document.body.innerHTML = "&lt;h2&gt;New Content&lt;/h2&gt;";<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box"><h2>New Content</h2></div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_html.asp"
+          target="_blank"
+          >JS DOM HTML</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>86. DOM Forms</h1>
+      <p>
+        <strong>Definition:</strong> DOM Forms HTML forms ka representation hai,
+        jahan aap input fields, buttons, aur forms ke dusre elements ko access
+        aur manipulate kar sakte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        document.forms["formName"];<br />
+        document.getElementById("formID").elements;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;form id="myForm"&gt;<br />
+        &nbsp;&nbsp;&lt;input type="text" id="name" value="John"&gt;<br />
+        &nbsp;&nbsp;&lt;input type="submit"&gt;<br />
+        &lt;/form&gt;<br />
+        &lt;script&gt;<br />
+        var nameValue = document.forms["myForm"]["name"].value;<br />
+        console.log(nameValue);<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">John</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_validation.asp" target="_blank"
+          >JS DOM Forms</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>87. DOM CSS</h1>
+      <p>
+        <strong>Definition:</strong> DOM CSS ke zariye aap JavaScript se CSS
+        styles ko access aur manipulate kar sakte hain. Is se aap elements ke
+        styles ko dynamically change kar sakte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        element.style.propertyName = "value";<br />
+        getComputedStyle(element).propertyName;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="myDiv"&gt;Style Me!&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        document.getElementById("myDiv").style.color = "blue";<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box" style="color: blue">Style Me!</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_css.asp"
+          target="_blank"
+          >JS DOM CSS</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>88. DOM Animations</h1>
+      <p>
+        <strong>Definition:</strong> DOM Animations aapko JavaScript ke zariye
+        HTML elements ki animations create karne ki sahulat dete hain. Is se aap
+        elements ki properties ko gradually change kar sakte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        element.style.transition = "property duration easing";<br />
+        element.style.animation = "name duration timing-function delay
+        iteration-count direction";
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="myDiv"
+        style="width:100px;height:100px;background:red;"&gt;&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        const div = document.getElementById("myDiv");<br />
+        div.style.transition = "width 2s";<br />
+        div.style.width = "200px";<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div
+        class="output-box"
+        style="width: 200px; height: 100px; background: red"
+      >
+        &nbsp;
+      </div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_animate.asp"
+          target="_blank"
+          >JS DOM Animations</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>89. DOM Events</h1>
+      <p>
+        <strong>Definition:</strong> DOM Events aise interactions hain jo user
+        ya browser ke zariye hoti hain, jese ki clicks, key presses, ya page
+        load hone par. JavaScript in events ko handle karne ke liye use hoti
+        hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        element.addEventListener("event", function);<br />
+        element.onclick = function;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;button id="myButton"&gt;Click Me!&lt;/button&gt;<br />
+        &lt;script&gt;<br />
+        document.getElementById("myButton").addEventListener("click", function()
+        {<br />
+        alert("Button clicked!");<br />
+        });<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Alert box will appear on button click.</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_events.asp"
+          target="_blank"
+          >JS DOM Events</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>90. DOM Event Listener</h1>
+      <p>
+        <strong>Definition:</strong> Event Listener aisi function hai jo kisi
+        specific event ke hone par trigger hoti hai. Is se aap user interactions
+        ko efficiently handle kar sakte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        element.addEventListener("event", function, useCapture);<br />
+        element.removeEventListener("event", function);
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="myDiv"&gt;Hover over me!&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        const div = document.getElementById("myDiv");<br />
+        div.addEventListener("mouseover", function() {<br />
+        div.style.backgroundColor = "yellow";<br />
+        });<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div
+        class="output-box"
+        style="width: 200px; height: 100px; background: lightgrey"
+      >
+        Hover over me!
+      </div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp"
+          target="_blank"
+          >JS Event Listener</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>91. DOM Navigation</h1>
+      <p>
+        <strong>Definition:</strong> DOM Navigation ka matlab hai DOM tree ke
+        andar elements ko traverse karna. Is se aap parent, child aur sibling
+        elements ko access kar sakte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        parentNode, childNodes, nextSibling, previousSibling, firstChild,
+        lastChild
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;ul&gt;<br />
+        &lt;li&gt;Item 1&lt;/li&gt;<br />
+        &lt;li&gt;Item 2&lt;/li&gt;<br />
+        &lt;li&gt;Item 3&lt;/li&gt;<br />
+        &lt;/ul&gt;<br />
+        &lt;script&gt;<br />
+        const list = document.querySelector("ul");<br />
+        const secondItem = list.childNodes[3];<br />
+        console.log(secondItem.innerText);<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Item 2</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_navigation.asp"
+          target="_blank"
+          >JS DOM Navigation</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>92. DOM Nodes</h1>
+      <p>
+        <strong>Definition:</strong> DOM Nodes wo individual parts hain jo HTML
+        document ko represent karte hain. Har node tree structure mein ek
+        position rakhta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code> node.nodeType, node.nodeName, node.childNodes </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div id="myDiv"&gt;Hello!&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        const myDiv = document.getElementById("myDiv");<br />
+        console.log(myDiv.nodeType);<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">1 (for ELEMENT_NODE)</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_nodes.asp"
+          target="_blank"
+          >JS DOM Nodes</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>93. DOM Collections</h1>
+      <p>
+        <strong>Definition:</strong> DOM Collections wo objects hain jo DOM mein
+        elements ki list ko represent karte hain. In mein multiple elements ho
+        sakte hain jo kisi specific selector se match karte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        document.getElementsByTagName("tagName");<br />
+        document.getElementsByClassName("className");
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div class="example"&gt;Item 1&lt;/div&gt;<br />
+        &lt;div class="example"&gt;Item 2&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        const items = document.getElementsByClassName("example");<br />
+        console.log(items.length);<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">2</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_collections.asp"
+          target="_blank"
+          >JS DOM Collections</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>94. DOM Node Lists</h1>
+      <p>
+        <strong>Definition:</strong> Node Lists DOM ka aisa structure hai jo
+        elements ke collection ko represent karta hai, jese ki child nodes. Isse
+        aap multiple nodes ko ek saath access kar sakte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code> document.querySelectorAll("selector"); </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        &lt;div class="item"&gt;Item 1&lt;/div&gt;<br />
+        &lt;div class="item"&gt;Item 2&lt;/div&gt;<br />
+        &lt;script&gt;<br />
+        const items = document.querySelectorAll(".item");<br />
+        console.log(items.length);<br />
+        &lt;/script&gt;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">2</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_htmldom_nodelist.asp"
+          target="_blank"
+          >JS DOM Node Lists</a
+        >
+      </div>
+    </section>
+
+    <section id="footer-section">
+      <footer>
+        <p>Copyright © 2024 write by : <span>Chaudhary Abdul Rehman</span></p>
+      </footer>
+    </section>
+  </body>
+</html>

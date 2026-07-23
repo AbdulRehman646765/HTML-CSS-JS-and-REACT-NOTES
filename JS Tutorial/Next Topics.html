@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Topics</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/js logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Js Tutorial.css" />
+  </head>
+
+  <body>
+    <section id="title-section">
+      <header>
+        <h1 class="main-title">JavaScript Notes (Advanced topics)</h1>
+      </header>
+    </section>
+
+    <section>
+      <h1>46. JS Loop For</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript for loop ko repeated execution
+        ke liye use karte hain jab tak ek condition true rehti hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        for (initialization; condition; increment) {<br />
+        // code to be executed<br />
+        }
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        for (let i = 0; i < 5; i++) {<br />
+        console.log(i);<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">0<br />1<br />2<br />3<br />4</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank"
+          >JS Loop For</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>47. JS Loop For In</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript for-in loop ka use objects ke
+        properties ko iterate karne ke liye hota hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        for (variable in object) {<br />
+        // code to be executed<br />
+        }
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let person = {name: 'John', age: 30};<br />
+        for (let key in person) {<br />
+        console.log(key + ': ' + person[key]);<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">name: John<br />age: 30</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_loop_forin.asp" target="_blank"
+          >JS Loop For In</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>48. JS Loop For Of</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript for-of loop iterable objects,
+        jaise arrays, strings, etc. ko iterate karne ke liye use hota hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        for (variable of iterable) {<br />
+        // code to be executed<br />
+        }
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let fruits = ['apple', 'banana', 'orange'];<br />
+        for (let fruit of fruits) {<br />
+        console.log(fruit);<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">apple<br />banana<br />orange</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_loop_forof.asp" target="_blank"
+          >JS Loop For Of</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>49. JS Loop While</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript while loop ka use tab tak code
+        execute karne ke liye hota hai jab tak condition true hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        while (condition) {<br />
+        // code to be executed<br />
+        }
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let i = 0;<br />
+        while (i < 5) {<br />
+        console.log(i);<br />
+        i++;<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">0<br />1<br />2<br />3<br />4</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_loop_while.asp" target="_blank"
+          >JS Loop While</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>50. JS Break</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript break statement ka use loop ya
+        switch se exit karne ke liye hota hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code> break; </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        for (let i = 0; i < 5; i++) {<br />
+        if (i === 2) {<br />
+        break;<br />
+        }<br />
+        console.log(i);<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">0<br />1</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_break.asp" target="_blank"
+          >JS Break</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>51. JS Iterables</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Iterables wo objects hain jo
+        iteration ko support karte hain, jaise Arrays, Strings, Maps, Sets, etc.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code> let iterable = [1, 2, 3]; // Example of an iterable </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        for (let value of iterable) {<br />
+        console.log(value);<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">1<br />2<br />3</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_iterables.asp" target="_blank"
+          >JS Iterables</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>52. JS Sets</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Sets ek collection hain jo
+        unique values ko store karte hain aur unki insertion order ko maintain
+        karte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        let set = new Set();<br />
+        set.add(value);
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let set = new Set();<br />
+        set.add(1);<br />
+        set.add(2);<br />
+        set.add(2); // Will not be added again<br />
+        console.log(set.size); // Output: 2
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">2</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_sets.asp" target="_blank"
+          >JS Sets</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>53. JS Set Methods</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Set Methods wo functions hain jo
+        Set objects par operations perform karte hain, jaise values add karna,
+        remove karna, check karna, etc.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        let set = new Set();<br />
+        set.add(value);<br />
+        set.delete(value);<br />
+        set.has(value);<br />
+        set.clear();
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let set = new Set();<br />
+        set.add(1);<br />
+        set.add(2);<br />
+        set.add(3);<br />
+        console.log(set.has(2)); // Output: true<br />
+        set.delete(2);<br />
+        console.log(set.has(2)); // Output: false<br />
+        set.clear();<br />
+        console.log(set.size); // Output: 0
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">true<br />false<br />0</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_set_methods.asp"
+          target="_blank"
+          >JS Set Methods</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>54. JS Maps</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Maps ek collection hain jo
+        key-value pairs ko store karte hain aur unki insertion order ko maintain
+        karte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        let map = new Map();<br />
+        map.set(key, value);
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let map = new Map();<br />
+        map.set('name', 'John');<br />
+        console.log(map.get('name')); // Output: John
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">John</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_maps.asp" target="_blank"
+          >JS Maps</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>55. JS Map Methods</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Map Methods wo functions hain jo
+        Map objects par operations perform karte hain, jaise key-value pairs ko
+        add karna, remove karna, aur iterate karna.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        let map = new Map();<br />
+        map.set(key, value);<br />
+        map.get(key);<br />
+        map.delete(key);<br />
+        map.has(key);<br />
+        map.clear();
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let map = new Map();<br />
+        map.set('a', 1);<br />
+        map.set('b', 2);<br />
+        console.log(map.get('a')); // Output: 1<br />
+        map.delete('a');<br />
+        console.log(map.has('a')); // Output: false<br />
+        map.clear();<br />
+        console.log(map.size); // Output: 0
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">1<br />false<br />0</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_maps.asp" target="_blank"
+          >JS Map Methods</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>56. JS Typeof</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript typeof operator ka istemal
+        variable ki type jaanne ke liye kiya jata hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code> typeof variable; </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let number = 5;<br />
+        let text = "Hello";<br />
+        console.log(typeof number); // Output: number<br />
+        console.log(typeof text); // Output: string
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">number<br />string</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_typeof.asp" target="_blank"
+          >JS Typeof</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>57. JS Type Conversion</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Type Conversion ka matlab hai ek
+        data type ko doosre data type mein convert karna, jese string ko number
+        ya boolean mein.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        Number(value);<br />
+        String(value);<br />
+        Boolean(value);
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let num = "10";<br />
+        console.log(Number(num)); // Output: 10<br />
+        let bool = 0;<br />
+        console.log(Boolean(bool)); // Output: false
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">10<br />false</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_type_conversion.asp"
+          target="_blank"
+          >JS Type Conversion</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>58. JS Destructuring</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Destructuring ka istemal arrays
+        ya objects se values ko extract karne ke liye hota hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        let [a, b] = array;<br />
+        let {key1, key2} = object;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let arr = [1, 2, 3];<br />
+        let [x, y] = arr;<br />
+        console.log(x); // Output: 1<br />
+        let obj = {name: "John", age: 30};<br />
+        let {name, age} = obj;<br />
+        console.log(name); // Output: John
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">1<br />John</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_destructuring.asp"
+          target="_blank"
+          >JS Destructuring</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>59. JS Bitwise</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Bitwise operators integers ke
+        bits par operations perform karte hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        a & b; // Bitwise AND<br />
+        a | b; // Bitwise OR<br />
+        a ^ b; // Bitwise XOR<br />
+        ~a; // Bitwise NOT
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let a = 5; // 0101 in binary<br />
+        let b = 3; // 0011 in binary<br />
+        console.log(a & b); // Output: 1 (0001)<br />
+        console.log(a | b); // Output: 7 (0111)<br />
+        console.log(a ^ b); // Output: 6 (0110)<br />
+        console.log(~a); // Output: -6 (inverts bits)
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">1<br />7<br />6<br />-6</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_bitwise.asp" target="_blank"
+          >JS Bitwise</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>60. JS RegExp</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Regular Expressions (RegExp)
+        patterns hain jo strings ke matching ya manipulation ke liye istemal
+        hoti hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        let regex = /pattern/flags;<br />
+        let regex = new RegExp('pattern', 'flags');
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let pattern = /hello/i;<br />
+        console.log(pattern.test('Hello World')); // Output: true
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">true</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_regexp.asp" target="_blank"
+          >JS RegExp</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>61. JS Precedence</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Precedence operator ke execution
+        order ko define karta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code> // No specific syntax, but precedence rules apply. </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let result = 3 + 5 * 2;<br />
+        console.log(result); // Output: 13 (multiplication has higher
+        precedence)
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">13</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_operators.asp" target="_blank"
+          >JS Precedence</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>62. JS Errors</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Errors wo situations hain jab
+        code execute nahi hota ya runtime errors generate hotay hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // No specific syntax, but can use try-catch for error handling.
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        try {<br />
+        let a = b;<br />
+        } catch (error) {<br />
+        console.log(error.message); // Output: b is not defined<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">b is not defined</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_errors.asp" target="_blank"
+          >JS Errors</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>63. JS Scope</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Scope variable ki accessibility
+        aur visibility ko define karta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // No specific syntax, but defines the scope using blocks or functions.
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let globalVar = "I'm global";<br />
+        function myFunction() {<br />
+        let localVar = "I'm local";<br />
+        console.log(globalVar); // Output: I'm global<br />
+        }<br />
+        myFunction();<br />
+        console.log(localVar); // Output: ReferenceError
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">I'm global<br />ReferenceError</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_scope.asp" target="_blank"
+          >JS Scope</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>64. JS Hoisting</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript Hoisting wo mechanism hai jisme
+        variables aur functions ko unke declare hone se pehle bhi access kiya ja
+        sakta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // No specific syntax, but hoisting applies to function declarations and
+        variable declarations.
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        console.log(myVar); // Output: undefined<br />
+        var myVar = 5;<br />
+        console.log(myVar); // Output: 5
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">undefined<br />5</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_hoisting.asp" target="_blank"
+          >JS Hoisting</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>65. JS Strict Mode</h1>
+      <p>
+        <strong>Definition:</strong> Strict Mode JavaScript ka ek feature hai jo
+        aapko stricter parsing aur error handling ki wajah se better performance
+        aur security deta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        'use strict';<br />
+        // Your code here
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        'use strict';<br />
+        let myVar;<br />
+        myVar = 20;<br />
+        console.log(myVar);
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">20</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_strict.asp" target="_blank"
+          >JS Strict Mode</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>66. JS this Keyword</h1>
+      <p>
+        <strong>Definition:</strong> "this" keyword function ke context ke
+        hisaab se different value ko represent karta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // Inside a function:<br />
+        function myFunction() {<br />
+        console.log(this);<br />
+        }
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let person = {<br />
+        name: 'Ali',<br />
+        greet: function() {<br />
+        console.log('Hello, ' + this.name);<br />
+        }<br />
+        };<br />
+        person.greet();
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Hello, Ali</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_this.asp" target="_blank"
+          >JS this Keyword</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>67. JS Arrow Function</h1>
+      <p>
+        <strong>Definition:</strong> Arrow function JavaScript mein function
+        banane ka ek modern tarika hai jo shorter syntax aur lexical "this" ko
+        use karta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        const functionName = (parameters) => {<br />
+        // code<br />
+        };
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        const add = (a, b) => a + b;<br />
+        console.log(add(5, 3)); // Output: 8
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">8</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_arrow_function.asp"
+          target="_blank"
+          >JS Arrow Function</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>68. JS Classes</h1>
+      <p>
+        <strong>Definition:</strong> Classes JavaScript mein object-oriented
+        programming ka concept hai jo aapko objects banane aur unka inheritance
+        karne ki ijazat dete hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        class ClassName {<br />
+        constructor() {<br />
+        // code<br />
+        }<br />
+        }
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        class Person {<br />
+        constructor(name) {<br />
+        this.name = name;<br />
+        }<br />
+        greet() {<br />
+        console.log('Hello, ' + this.name);<br />
+        }<br />
+        }<br />
+        let person = new Person('Ali');<br />
+        person.greet(); // Output: Hello, Ali
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Hello, Ali</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_classes.asp" target="_blank"
+          >JS Classes</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>69. JS Modules</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript modules ek way hain jismein aap
+        code ko alag files mein organize kar sakte hain, taake reuse aur
+        maintenance asaan ho sake.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // In module.js<br />
+        export const myVariable = 10;<br />
+        // In main.js<br />
+        import { myVariable } from './module.js';
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        // In math.js<br />
+        export function add(a, b) {<br />
+        return a + b;<br />
+        }<br />
+        // In main.js<br />
+        import { add } from './math.js';<br />
+        console.log(add(5, 3)); // Output: 8
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">8</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_modules.asp" target="_blank"
+          >JS Modules</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>70. JS JSON</h1>
+      <p>
+        <strong>Definition:</strong> JSON (JavaScript Object Notation) ek
+        lightweight data-interchange format hai jo human-readable aur
+        machine-readable dono hota hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        const jsonString = '{"name": "Ali", "age": 25}';<br />
+        const jsonObject = JSON.parse(jsonString);
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        const person = {<br />
+        name: 'Ali',<br />
+        age: 25<br />
+        };<br />
+        const jsonString = JSON.stringify(person);<br />
+        console.log(jsonString); // Output: {"name":"Ali","age":25}
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">{"name":"Ali","age":25}</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_json.asp" target="_blank"
+          >JS JSON</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>71. JS Debugging</h1>
+      <p>
+        <strong>Definition:</strong> Debugging JavaScript code ka process hai
+        jismein aap errors ko dhoondte aur unhe theek karte hain taake code sahi
+        se chale.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        console.log(variable);<br />
+        debugger; // Use developer tools
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let x = 5;<br />
+        let y = 10;<br />
+        console.log(x + y); // Output: 15
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">15</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_debugging.asp" target="_blank"
+          >JS Debugging</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>72. JS Style Guide</h1>
+      <p>
+        <strong>Definition:</strong> Style guide JavaScript code likhne ke liye
+        best practices aur conventions ko define karta hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // Use camelCase for variable names<br />
+        let myVariable = 10;<br />
+        // Use meaningful names<br />
+        const userAge = 25;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        function calculateArea(width, height) {<br />
+        return width * height;<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Function definition</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_style_guide.asp"
+          target="_blank"
+          >JS Style Guide</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>73. JS Best Practices</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript best practices woh principles
+        hain jo code ko clean, efficient aur maintainable banate hain.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // Use 'const' and 'let' instead of 'var'<br />
+        const pi = 3.14;<br />
+        let radius = 5;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        const calculateCircumference = (radius) => 2 * Math.PI * radius;<br />
+        console.log(calculateCircumference(5)); // Output: 31.41592653589793
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">31.41592653589793</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_best_practices.asp"
+          target="_blank"
+          >JS Best Practices</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>74. JS Mistakes</h1>
+      <p>
+        <strong>Definition:</strong> Common mistakes JavaScript coding mein woh
+        errors hain jo beginners aksar karte hain aur inhe samajhna important
+        hai.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // Not using semicolons<br />
+        let x = 10<br />
+        console.log(x)
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        let person = {<br />
+        name: 'Ali',<br />
+        age: 25,<br />
+        }<br />
+        console.log(person); // Output: { name: 'Ali', age: 25 }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">{ name: 'Ali', age: 25 }</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_mistakes.asp" target="_blank"
+          >JS Mistakes</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>75. JS Performance</h1>
+      <p>
+        <strong>Definition:</strong> JavaScript performance ka matlab hai code
+        ki speed aur efficiency ko optimize karna, taake applications better
+        response time de sakein.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // Minimize DOM manipulations<br />
+        document.getElementById('myId').textContent = 'Hello';
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        for (let i = 0; i < 1000; i++) {<br />
+        console.log(i);<br />
+        }
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">0 to 999</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a
+          href="https://www.w3schools.com/js/js_performance.asp"
+          target="_blank"
+          >JS Performance</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <h1>76. JS Reserved Words</h1>
+      <p>
+        <strong>Definition:</strong> Reserved words woh words hain jo JavaScript
+        mein special meanings rakhte hain aur inhe identifiers ke liye istemal
+        nahi kiya ja sakta.
+      </p>
+
+      <p><strong>Syntax:</strong></p>
+      <code>
+        // Example of reserved words:<br />
+        let break;<br />
+        let function;<br />
+        let return;
+      </code>
+
+      <p><strong>Example:</strong></p>
+      <code>
+        // Invalid variable names<br />
+        let let = 5;<br />
+        let var = 10;
+      </code>
+
+      <p><strong>Output:</strong></p>
+      <div class="output-box">Syntax Error</div>
+
+      <div class="extra-info">
+        <p><strong>Link of extra information for this topic:</strong></p>
+        <a href="https://www.w3schools.com/js/js_reserved.asp" target="_blank"
+          >JS Reserved Words</a
+        >
+      </div>
+    </section>
+
+    <section id="footer-section">
+      <footer>
+        <p>Copyright © 2024 write by : <span>Chaudhary Abdul Rehman</span></p>
+      </footer>
+    </section>
+  </body>
+</html>
