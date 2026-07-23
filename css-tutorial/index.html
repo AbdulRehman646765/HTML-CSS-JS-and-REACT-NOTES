@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="css-tutorial.css" />
   </head>
   <body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: rgba(10, 14, 26, 0.9); border-bottom: 1px solid rgba(255, 255, 255, 0.1); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px);">
+      <a href="../index.html" style="color: #2e9fff; text-decoration: none; font-weight: 600; font-family: sans-serif; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">
+        <i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back_home">Back to Home</span>
+      </a>
+      <div class="nav-lang-container"></div>
+    </header>
+
     <section id="title-section">
       <header>
-        <h1 class="main-title">CSS Notes</h1>
+        <h1 class="main-title" data-i18n="css_notes_title">CSS Notes</h1>
       </header>
     </section>
 
@@ -247,7 +254,7 @@
     </section>
 
     <section>
-      <h1>CSS Height/Width</h1>
+      <h1>10. CSS Height/Width</h1>
       <p>
         <strong>Definition:</strong> CSS mein height aur width properties kisi
         element ke dimensions ko control karti hain. Yeh fixed (pixels),
@@ -275,7 +282,7 @@
     </section>
 
     <section>
-      <h1>CSS Box Model</h1>
+      <h1>11. CSS Box Model</h1>
       <p>
         <strong>Definition:</strong> CSS box model mein padding, borders,
         margins aur content included hotay hain jo ek element ka total size
@@ -306,7 +313,7 @@
     </section>
 
     <section>
-      <h1>CSS Outline</h1>
+      <h1>12. CSS Outline</h1>
       <p>
         <strong>Definition:</strong> Outline kisi element ke bahar additional
         line hai jo border ke bahar lagti hai aur layout ko effect nahi karti.
@@ -330,7 +337,7 @@
     </section>
 
     <section>
-      <h1>CSS Text</h1>
+      <h1>13. CSS Text</h1>
       <p>
         <strong>Definition:</strong> CSS text properties text ke style ko
         control karte hain, jaise alignment, decoration, transform, aur spacing.
@@ -357,7 +364,7 @@
     </section>
 
     <section>
-      <h1>CSS Fonts</h1>
+      <h1>14. CSS Fonts</h1>
       <p>
         <strong>Definition:</strong> CSS fonts properties kisi text ka font
         family, size, weight aur style control karti hain.
@@ -384,7 +391,7 @@
     </section>
 
     <section>
-      <h1>CSS Icons</h1>
+      <h1>15. CSS Icons</h1>
       <p>
         <strong>Definition:</strong> CSS mein icons font libraries, jaise Font
         Awesome, ke through add kiye ja sakte hain, ya images use ki ja sakti
@@ -409,7 +416,7 @@
     </section>
 
     <section>
-      <h1>CSS Links</h1>
+      <h1>16. CSS Links</h1>
       <p>
         <strong>Definition:</strong> CSS link states (normal, hover, active,
         visited) ko style kar sakta hai.
@@ -432,7 +439,7 @@
     </section>
 
     <section>
-      <h1>CSS Lists</h1>
+      <h1>17. CSS Lists</h1>
       <p>
         <strong>Definition:</strong> CSS lists ka style control karta hai, jaise
         list-style-type, position, aur custom icons set kar sakta hai.
@@ -456,7 +463,7 @@
     </section>
 
     <section>
-      <h1>CSS Tables</h1>
+      <h1>18. CSS Tables</h1>
       <p>
         <strong>Definition:</strong> CSS tables mein table borders, spacing, aur
         alignment control karta hai.
@@ -484,7 +491,7 @@
     </section>
 
     <section>
-      <h1>CSS Display</h1>
+      <h1>19. CSS Display</h1>
       <p>
         <strong>Definition:</strong> CSS display property element ki display
         type ko define karta hai, jaise block, inline, inline-block, etc.
@@ -512,7 +519,7 @@
     </section>
 
     <section>
-      <h1>CSS Max-width</h1>
+      <h1>20. CSS Max-width</h1>
       <p>
         <strong>Definition:</strong> CSS max-width property element ki maximum
         width define karti hai. Agar content is width se zyada hota hai to wrap
@@ -541,7 +548,7 @@
     </section>
 
     <section>
-      <h1>CSS Position</h1>
+      <h1>21. CSS Position</h1>
       <p>
         <strong>Definition:</strong> CSS position property kisi element ki
         position ko control karta hai, jaise static, relative, absolute, fixed,
@@ -573,7 +580,7 @@
     </section>
 
     <section>
-      <h1>CSS Z-index</h1>
+      <h1>22. CSS Z-index</h1>
       <p>
         <strong>Definition:</strong> CSS z-index property stacking order ko
         define karta hai. Higher z-index wale elements lower z-index wale
@@ -601,7 +608,7 @@
     </section>
 
     <section>
-      <h1>CSS Overflow</h1>
+      <h1>23. CSS Overflow</h1>
       <p>
         <strong>Definition:</strong> CSS overflow property define karta hai ke
         jab content element se bahar chala jaye to kya hona chahiye (hidden,
@@ -628,7 +635,7 @@
     </section>
 
     <section>
-      <h1>CSS Float</h1>
+      <h1>24. CSS Float</h1>
       <p>
         <strong>Definition:</strong> CSS float property elements ko left ya
         right side par float karne ke liye use hoti hai, allowing text and
@@ -656,7 +663,7 @@
     </section>
 
     <section>
-      <h1>CSS Inline-block</h1>
+      <h1>25. CSS Inline-block</h1>
       <p>
         <strong>Definition:</strong> CSS inline-block property elements ko
         inline position par display karta hai lekin unki dimensions define karne
@@ -687,7 +694,7 @@
     </section>
 
     <section>
-      <h1>CSS Align</h1>
+      <h1>26. CSS Align</h1>
       <p>
         <strong>Definition:</strong> CSS align property text ya inline elements
         ko horizontally ya vertically align karne ke liye use hoti hai.
@@ -711,7 +718,7 @@
     </section>
 
     <section>
-      <h1>CSS Combinators</h1>
+      <h1>27. CSS Combinators</h1>
       <p>
         <strong>Definition:</strong> CSS combinators selectors ko combine karte
         hain, jisse nested elements ko select karna asaan hota hai.
@@ -739,7 +746,7 @@
     </section>
 
     <section>
-      <h1>CSS Pseudo-class</h1>
+      <h1>28. CSS Pseudo-class</h1>
       <p>
         <strong>Definition:</strong> CSS pseudo-classes are used to define the
         special state of an element. They allow you to apply styles based on the
@@ -815,7 +822,7 @@
     </section>
 
     <section>
-      <h1>CSS Pseudo-element</h1>
+      <h1>29. CSS Pseudo-element</h1>
       <p>
         <strong>Definition:</strong> CSS pseudo-elements allow you to style
         specific parts of an element. They enable you to apply styles to
@@ -889,7 +896,7 @@
     </section>
 
     <section>
-      <h1>CSS Opacity</h1>
+      <h1>30. CSS Opacity</h1>
       <p>
         <strong>Definition:</strong> CSS opacity property kisi element ki
         transparency ko control karti hai, jahan 0 (completely transparent) se 1
@@ -916,7 +923,7 @@
     </section>
 
     <section>
-      <h1>CSS Navigation Bar</h1>
+      <h1>31. CSS Navigation Bar</h1>
       <p>
         <strong>Definition:</strong> CSS navigation bar website ke menu ko style
         karne ke liye use hoti hai, jisme links ko horizontal ya vertical align
@@ -946,7 +953,7 @@
     </section>
 
     <section>
-      <h1>CSS Dropdowns</h1>
+      <h1>32. CSS Dropdowns</h1>
       <p>
         <strong>Definition:</strong> CSS dropdown menus ko create karne ke liye
         use hoti hai, jisme sub-menus ko hide/show kiya jata hai.
@@ -980,7 +987,7 @@
     </section>
 
     <section>
-      <h1>CSS Image Gallery</h1>
+      <h1>33. CSS Image Gallery</h1>
       <p>
         <strong>Definition:</strong> CSS image gallery ek tareeqa hai multiple
         tasavvuraton ko grid ya mosaic layout mein dikhane ka. Yeh web pages ki
@@ -1013,7 +1020,7 @@
     </section>
 
     <section>
-      <h1>CSS Image Sprites</h1>
+      <h1>34. CSS Image Sprites</h1>
       <p>
         <strong>Definition:</strong> CSS image sprites ka matlab hai multiple
         tasavvuraton ko ek single image file mein mila dena, jo HTTP requests ki
@@ -1053,7 +1060,7 @@
     </section>
 
     <section>
-      <h1>CSS Attribute Selectors</h1>
+      <h1>35. CSS Attribute Selectors</h1>
       <p>
         <strong>Definition:</strong> CSS attribute selectors aapko elements ko
         unke attributes aur values ke buniyad par select karne ki ijaazat dete
@@ -1086,7 +1093,7 @@
     </section>
 
     <section>
-      <h1>CSS Forms</h1>
+      <h1>36. CSS Forms</h1>
       <p>
         <strong>Definition:</strong> CSS ka istemal HTML forms ko style karne ke
         liye kiya ja sakta hai, jo inki shakal aur istemal ko behtar banata hai.
@@ -1120,7 +1127,7 @@
     </section>
 
     <section>
-      <h1>CSS Counters</h1>
+      <h1>37. CSS Counters</h1>
       <p>
         <strong>Definition:</strong> CSS counters ek tareeqa hai kisi count ko
         track karne ka aur inhe automatically number dene ke liye istemal kiya
@@ -1152,7 +1159,7 @@
     </section>
 
     <section>
-      <h1>CSS Website Layout</h1>
+      <h1>38. CSS Website Layout</h1>
       <p>
         <strong>Definition:</strong> CSS ka istemal web pages ke layout banane
         ke liye kiya jata hai, jo elements ko mukhtalif tareeqon se arrange
@@ -1186,7 +1193,7 @@
     </section>
 
     <section>
-      <h1>CSS Units</h1>
+      <h1>39. CSS Units</h1>
       <p>
         <strong>Definition:</strong> CSS units yeh tay karte hain ke
         measurements kis tarah se express kiye jaate hain. Aam units mein pixels
@@ -1217,7 +1224,7 @@
     </section>
 
     <section>
-      <h1>CSS Specificity</h1>
+      <h1>40. CSS Specificity</h1>
       <p>
         <strong>Definition:</strong> CSS specificity yeh tay karta hai ke kis
         style ko kisi element par lagoo kiya jaye jab kai styles lagoo kiye ja
@@ -1250,7 +1257,7 @@
     </section>
 
     <section>
-      <h1>CSS !important</h1>
+      <h1>41. CSS !important</h1>
       <p>
         <strong>Definition:</strong> CSS mein !important rule kisi style ko
         doosre conflicting styles par zyada ahmiyat dene ke liye istemal kiya
@@ -1283,7 +1290,7 @@
     </section>
 
     <section>
-      <h1>CSS Math Functions</h1>
+      <h1>42. CSS Math Functions</h1>
       <p>
         <strong>Definition:</strong> CSS Math Functions aapko CSS mein
         calculations karne ki ijaazat dete hain. Yeh functions web development
@@ -1351,7 +1358,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
-      <h1>1. CSS Rounded Corners</h1>
+      <h1>43. CSS Rounded Corners</h1>
       <p>
         <strong>Definition:</strong> Rounded corners ko create karne ke liye
         "border-radius" property use hoti hai.
@@ -1386,7 +1393,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
-      <h1>2. CSS Border Images</h1>
+      <h1>44. CSS Border Images</h1>
       <p>
         <strong>Definition:</strong> Border image ek image ko border ke tor par
         use karta hai instead of a solid color or line.
@@ -1420,7 +1427,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
-      <h1>3. CSS Backgrounds</h1>
+      <h1>45. CSS Backgrounds</h1>
       <p>
         <strong>Definition:</strong> Background properties ko elements ke liye
         background color, image, position, repeat aur size ko define karne ke
@@ -1462,7 +1469,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
-      <h1>4. CSS Colors</h1>
+      <h1>46. CSS Colors</h1>
       <p>
         <strong>Definition:</strong> CSS me colors ko elements ki styling ke
         liye use kiya jata hai, jese text, backgrounds, borders waghera.
@@ -1490,7 +1497,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
-      <h1>5. CSS Color Keywords</h1>
+      <h1>47. CSS Color Keywords</h1>
       <p>
         <strong>Definition:</strong> CSS color keywords pre-defined color names
         hain jo different colors ko represent karte hain.
@@ -1510,7 +1517,7 @@
     </section>
 
     <section>
-      <h1>CSS Gradients</h1>
+      <h1>48. CSS Gradients</h1>
       <p>
         <strong>Definition:</strong> CSS gradients kisi element ke background
         mein color transitions create karne ke liye istemal hote hain.
@@ -1527,7 +1534,7 @@
     </section>
 
     <section>
-      <h1>CSS Shadows</h1>
+      <h1>49. CSS Shadows</h1>
       <p>
         <strong>Definition:</strong> CSS shadows ka istemal kisi element ke
         andar ya bahar shadow effects create karne ke liye hota hai.
@@ -1541,7 +1548,7 @@
     </section>
 
     <section>
-      <h1>CSS Text Effects</h1>
+      <h1>50. CSS Text Effects</h1>
       <p>
         <strong>Definition:</strong> CSS text effects ka istemal text par visual
         effects apply karne ke liye hota hai, jaise shadows, strokes, aur
@@ -1555,7 +1562,7 @@
     </section>
 
     <section>
-      <h1>CSS Web Fonts</h1>
+      <h1>51. CSS Web Fonts</h1>
       <p>
         <strong>Definition:</strong> CSS web fonts ka istemal custom fonts ko
         web pages par load karne ke liye hota hai, jisse typography ko enhance
@@ -1572,7 +1579,7 @@
     </section>
 
     <section>
-      <h1>CSS 2D Transforms</h1>
+      <h1>52. CSS 2D Transforms</h1>
       <p>
         <strong>Definition:</strong> CSS 2D transforms kisi element ko rotate,
         scale, translate, ya skew karne ke liye istemal hote hain.
@@ -1594,7 +1601,7 @@
     </section>
 
     <section>
-      <h1>CSS 3D Transforms</h1>
+      <h1>53. CSS 3D Transforms</h1>
       <p>
         <strong>Definition:</strong> CSS 3D transforms kisi element ko 3D space
         mein manipulate karne ke liye istemal hote hain, jaise perspective,
@@ -1616,7 +1623,7 @@
     </section>
 
     <section>
-      <h1>CSS Transitions</h1>
+      <h1>54. CSS Transitions</h1>
       <p>
         <strong>Definition:</strong> CSS transitions kisi property ke change
         hone par smooth animations create karne ke liye istemal hote hain.
@@ -1640,7 +1647,7 @@
     </section>
 
     <section>
-      <h1>CSS Animations</h1>
+      <h1>55. CSS Animations</h1>
       <p>
         <strong>Definition:</strong> CSS animations kisi element par complex
         animations create karne ke liye istemal hote hain, jo keyframes ke
@@ -1663,7 +1670,7 @@
 
     <!-- CSS Tooltips -->
     <section>
-      <h1>1. CSS Tooltips</h1>
+      <h1>56. CSS Tooltips</h1>
       <p>
         <strong>Definition:</strong> Tooltips woh message hotay hain jo kisi
         element par hover karne se display hotay hain.
@@ -1696,7 +1703,7 @@
 
     <!-- CSS Style Images -->
     <section>
-      <h1>2. CSS Style Images</h1>
+      <h1>57. CSS Style Images</h1>
       <p>
         <strong>Definition:</strong> CSS ka istemal images ko style karne ke
         liye hota hai, jese borders, shadows, aur effects.
@@ -1714,7 +1721,7 @@
 
     <!-- CSS Image Reflection -->
     <section>
-      <h1>3. CSS Image Reflection</h1>
+      <h1>58. CSS Image Reflection</h1>
       <p>
         <strong>Definition:</strong> CSS image reflection ek effect hai jisme
         image ka reflection uske niche dikhai deta hai.
@@ -1732,9 +1739,15 @@
 
     <section id="footer-section">
       <footer>
-        <p>Copyright © 2024 write by : <span>Chaudhary Abdul Rehman</span></p>
+        <p><span data-i18n="lbl_copyright">Copyright Â© 2024 â€” Written by</span> <span>Chaudhary Abdul Rehman</span></p>
         <!-- Copyright notice in footer -->
       </footer>
     </section>
+
+    <!-- i18n Scripts -->
+    <script src="../js/translations.js"></script>
+    <script src="../js/css_translations.js"></script>
+    <script src="../js/i18n.js"></script>
   </body>
 </html>
+

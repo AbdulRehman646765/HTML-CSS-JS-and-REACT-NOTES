@@ -12,9 +12,16 @@
     <link rel="stylesheet" href="js-tutorial.css" />
   </head>
   <body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: rgba(10, 14, 26, 0.9); border-bottom: 1px solid rgba(255, 255, 255, 0.1); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px);">
+      <a href="../index.html" style="color: #2e9fff; text-decoration: none; font-weight: 600; font-family: sans-serif; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">
+        <i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back_home">Back to Home</span>
+      </a>
+      <div class="nav-lang-container"></div>
+    </header>
+
     <section id="title-section">
       <header>
-        <h1 class="main-title">JavaScript Notes (Basic topics)</h1>
+        <h1 class="main-title" data-i18n="js_notes_title">JavaScript Notes (Basic topics)</h1>
       </header>
     </section>
     <section>
@@ -1317,8 +1324,13 @@
 
     <section id="footer-section">
       <footer>
-        <p>Copyright © 2024 write by : <span>Chaudhary Abdul Rehman</span></p>
+        <p><span data-i18n="lbl_copyright">Copyright © 2024 — Written by</span> <span>Chaudhary Abdul Rehman</span></p>
       </footer>
     </section>
+
+    <!-- i18n Scripts -->
+    <script src="../js/translations.js"></script>
+    <script src="../js/js_translations.js"></script>
+    <script src="../js/i18n.js"></script>
   </body>
 </html>
